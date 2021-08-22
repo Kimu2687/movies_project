@@ -1,0 +1,9 @@
+
+@font-face{
+    font-family: best;
+    src: url('../fonts/best.ttf');
+  }
+  body{
+font-family: best;
+    background-color: #2E4053;
+}
