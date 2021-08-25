@@ -5,5 +5,94 @@
   }
   body{
 font-family: best;
-    background-color: #2E4053;
+    background: linear-gradient( to left,#000000, #17314B ,#000000 );
+    /* background: linear-gradient(to right, red 34%, blue 65%); */
 }
+.text_color{
+  color: #f39c12 !important;
+}
+.text_color:hover{
+  color:#B9770E;
+}
+.rating_big {
+  height: 15px;
+}
+.rating{
+  height: 10px;
+
+}
+.text_description{
+  color: #DAE3E5;
+}
+.button_icon{
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: #BDC3C4;
+  transform: scale(0.7);
+
+}
+.button_icon:hover{
+   transform: scale(1);
+  color: white; 
+  /* animation: buttons_hover 2s ease ; */
+}
+.button_icon:active{
+  /* transform: scale(1);
+  color: white; */
+  animation: buttons_focus 0.2s ease ;
+}
+
+
+@keyframes buttons_hover {
+ /* 0%{transform: scale(0);} 
+ 30%{transform:scale(0.3);}
+ 40%{transform:scale(0.4);}
+ 50%{transform:scale(0.5);}
+ 60%{transform:scale(0.6);}
+ 70%{transform:scale(0.7);}
+ 80%{transform:scale(0.8);}
+ 90%{transform:scale(0.9);} */
+ 100%{transform:rotate(-270deg)}
+
+}
+
+.poster:hover{
+
+  /* transform: scale(0.8);
+   */
+  
+animation: poster_hover 5s ease infinite;
+}
+@keyframes buttons_focus {
+  20%{transform: scale(2);} 
+  40%{transform: scale(4);} 
+  60%{transform: scale(6);} 
+  80%{transform: scale(8);} 
+  100%{transform: scale(10);} 
+
+
+
+  /* 30%{transform:translateX(20px);} */
+ 
+ 
+ }
+ @keyframes poster_hover {
+  10%{transform: scale(0.9);} 
+  20%{transform: scale(0.8);} 
+  30%{transform: scale(0.7);} 
+  40%{transform: scale(0.6);}
+  50%{transform: scale(0.5);} 
+  60%{transform: scale(0.6);} 
+  70%{transform: scale(0.7);} 
+  80%{transform: scale(0.8);} 
+  90%{transform: scale(0.9);} 
+  100%{transform: scale(1);} 
+
+
+
+  /* 30%{transform:translateX(20px);} */
+ 
+ 
+ }
+

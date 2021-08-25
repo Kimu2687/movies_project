@@ -5,29 +5,33 @@
      <transition name="nav" appear >
     <nav class="navbar navbar-expand-sm  bg_">
       <!-- <img src="../assets/logo.png"/> -->
+     <transition name="logo_" appear >
      
   <a class="navbar-brand text_color" href="#">
-     <transition name="logo_" appear >
    
-     <img alt="Vue logo" src="./assets/logo.png" class="logo" >
-     </transition>
+     <img alt="Vue logo" src="https://play-lh.googleusercontent.com/CiTfMc-nFPRGXqzUnEbDpEv254m4UevnfBtBwAhybVTnaacnMuYsZW2e0fssv6tbgv8" class="logo" >
+   
       &nbsp;Moview</a>
+      </transition>
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+   <i class="fa fa-ellipsis-v text_color" aria-hidden="true"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <!-- <ul class=""> -->
+     <transition name="logo_" appear tag="ul" class="navbar-nav mr-auto" >
 
       <li class="nav-item active">
         <a class="nav-link text_color" href="#">Log in <span class="sr-only">(current)</span></a>
       </li>
+
      
      
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li> -->
-    </ul>
+     </transition>
     <transition name="search" appear>
     <form class="form-inline my-2 my-lg-0">
       <input class="search_bg form-control mr-sm-2 " type="search" placeholder="Search movies" aria-label="Search">
@@ -58,24 +62,19 @@ html{
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
 }
 
 #nav {
   padding: 30px;
 }
-.text_color{
-  color:#F39C12;
-}
-.text_color:hover{
-  color:#B9770E;
-}
+
 .logo{
   height: 40px;
-  border: 2px #F39C12 solid;
+  /* border: 2px #F39C12 solid; */
   border-radius: 50px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 #nav a {
   font-weight: bold;
@@ -99,12 +98,12 @@ html{
   transition: all 0.5s ease;
 }
 .logo_-enter-from{
-  transform:scale(0);
+  transform:translateX(200px);
   /* transform: translateY(-50px); */
   opacity: 0;
 }
 .logo_-enter-active{
-  transition: all 1s ease;
+  transition: all 2s ease;
 }
 .search-enter-from{
   transform:scale(0);
