@@ -7,23 +7,24 @@
       <!-- <img src="../assets/logo.png"/> -->
      <transition name="logo_" appear >
      
-  <a class="navbar-brand text_color" href="#">
+  <router-link to="/" class="navbar-brand title_">
    
-     <img alt="Vue logo" src="https://play-lh.googleusercontent.com/CiTfMc-nFPRGXqzUnEbDpEv254m4UevnfBtBwAhybVTnaacnMuYsZW2e0fssv6tbgv8" class="logo" >
+     <img alt="Vue logo" src="https://play-lh.googleusercontent.com/CiTfMc-nFPRGXqzUnEbDpEv254m4UevnfBtBwAhybVTnaacnMuYsZW2e0fssv6tbgv8" class="logo " >
    
-      &nbsp;Moview</a>
+      Moview</router-link>
       </transition>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   <i class="fa fa-ellipsis-v text_color" aria-hidden="true"></i>
+   <i class="fa fa-ellipsis-v text_color" aria-hidden="true"></i>n
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <!-- <ul class=""> -->
      <transition name="logo_" appear tag="ul" class="navbar-nav mr-auto" >
 
-      <li class="nav-item active">
-        <a class="nav-link text_color" href="#">Log in <span class="sr-only">(current)</span></a>
+      <li class="nav-item active search_bg ml-3 ">
+        <router-link  class="nav-link title_" to="/Movies_page">	
+<i class="fa fa-google"></i> &nbsp;|&nbsp;<i class="fa fa-facebook"></i> </router-link>
       </li>
 
      
@@ -85,7 +86,7 @@ html{
   color: #42b983;
 }
 .bg_{
-  background: #273746;
+  background: #1c2833 !important;
   color: white;
 }
 
@@ -114,9 +115,34 @@ html{
   transition: all 1s ease;
 }
 .search_bg{
-  background: #1C2833 !important;
+  background: #273746 !important;
   border-radius: 50px !important;
   border:none !important;
+  color: #adaaa1 !important;;
+}
+.search_bg:hover{
+  background: #1c2833 !important;
+  border-radius: 50px !important;
+  border:none;
+  color: #adaaa1 !important;;
+}
+.search_bg:active{
+ background: #1c2833 !important;
+  border:none;
+
+  border:#69747e solid 2px !important;
+  color: #adaaa1 !important;;
+}
+.form-control:focus {
+        border-color: #28a745 !important;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    } 
+.search_bg:focus{
+ background: #1c2833 !important;
+  border:none;
+
+  border:#69747e solid 2px !important;
+  color: #adaaa1 !important;;
 }
 .button_bg{
   border-radius: 50px !important;

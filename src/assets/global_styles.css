@@ -5,17 +5,75 @@
   }
   body{
 font-family: best;
-    background: linear-gradient( to left,#000000, #17314B ,#000000 );
+    background:#273746
     /* background: linear-gradient(to right, red 34%, blue 65%); */
 }
+.small{
+  font-size: 12px !important;
+}
+.icon_circle{
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  /* margin: 2px; */
+  background-color: #273746;
+  border-radius: 50px;
+}
+.label_text{
+  color: #adaaa1 !important;
+  font-size: 17px;
+  margin: 0;
+  /* text-align: center; */
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+}
+.label_text:hover{
+  color:#ECF0F1 !important;
+  font-size: 21px !important;
+
+  /* font-size: 1.5em; */
+
+}
+.title_{
+  color: #adaaa1 !important;
+  font-size: 15px;
+  margin: 0;
+  /* text-align: center; */
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+  /* transition: */
+}
+.title_:hover{
+  color:#ECF0F1 !important;
+  font-size: 21px !important;
+
+  /* font-size: 1.5em; */
+
+}
 .text_color{
-  color: #f39c12 !important;
+  color: #adaaa1 !important;
+  font-size: 12px;
+  margin: 0;
+  /* text-align: center; */
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
 }
 .text_color:hover{
-  color:#B9770E;
+  color:#ECF0F1 !important;
+  font-size: 19px !important;
+
+  font-size: 1.5em;
+
 }
 .rating_big {
   height: 15px;
+
 }
 .rating{
   height: 10px;
@@ -96,3 +154,30 @@ animation: poster_hover 5s ease infinite;
  
  }
 
+.youtube{
+  height: 30px;
+  width: 45px;
+  color: #f39c12 !important;
+
+
+}
+.chiselled{
+    background: #273746;
+    /* border: 1px solid #ccc; */
+    /* padding: 10px 30px; */
+    border-radius: 3px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #adaaa1;
+    box-shadow: #1c2833 0px 30px 60px -12px inset,black 0px 18px 36px -18px inset;
+  }
+  
+  .chiselled:focus {
+    background: #e5e5e5;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+  }

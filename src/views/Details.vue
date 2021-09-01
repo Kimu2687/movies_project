@@ -1,7 +1,7 @@
 <template>
 <div class="container-fluid">
 <transition-group name="bg" appear>
-  <div v-if="MOVIE_DETAILS"  class="movies_details" v-bind:style="{ 'background-image': 'linear-gradient(to top,black 20%,#F99205 100%),url(' + IMG_URL + MOVIE_DETAILS.poster_path + ')' }">
+  <div v-if="MOVIE_DETAILS"  class="movies_details" v-bind:style="{ 'background-image': 'linear-gradient(to top,black 20%,#F99205 100%),url(' + IMG_URL + MOVIE_DETAILS.backdrop_path + ')' }">
     <!-- <transition name="table" appear> -->
 <transition name="table" appear>
 
@@ -14,6 +14,10 @@
         <div class="col-lg-9">
 
       <table>
+        <tr>
+          <h2 class="text_color">{{MOVIE_DETAILS.genres &&MOVIE_DETAILS.genres.length > 0? MOVIE_DETAILS.genres[0].name :''}}</h2>
+          <!-- sight.photos && sight.photos.length > 0 ? sight.photos[0].photo_reference : '' -->
+        </tr>
   <tr>
     <td class="title pt-3" >
    <h4> {{MOVIE_DETAILS.title}}</h4>
@@ -22,6 +26,11 @@
    <tr>
     <td class="title">
     <h5> {{MOVIE_DETAILS.release_date}}</h5>
+    </td>
+   </tr>
+   <tr>
+    <td class="title">
+    <h6> {{MOVIE_DETAILS.runtime}} &nbsp;Minutes</h6>
     </td>
   </tr>
    <tr>
@@ -32,8 +41,16 @@
   <tr>
     <td class="title">
       <img src="../assets/images/stars.png" class="rating_big" /> &nbsp; 7.8
+<p v-for="v in MOVIE_DETAILS.production_countries" :key="v">
+({{v.iso_3166_1}}),{{v.name}}
+
+</p>
+
     </td>
+
   </tr>
+  <tr ><td classs="text_color"><img src="https://i.pinimg.com/originals/19/7b/36/197b365922d1ea3aa1a932ff9bbda4a6.png" class="youtube"><small class="text_color">Trailer:</small>
+  </td></tr>
   <tr>
 <td>
       <!-- <button class="btn btn-outline-warning btn-sm my-2 my-sm-0 button_cart" type="submit">Add to cart &nbsp;<i class="fa fa-cart-plus" aria-hidden="true"></i></button> -->
@@ -47,6 +64,7 @@
 </td>
 
   </tr>
+ 
   </table>
    
         </div>
