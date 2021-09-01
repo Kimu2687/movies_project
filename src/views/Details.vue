@@ -161,6 +161,10 @@ export default {
       BASE_URL.value + MOVIE_ID.value + API_KEY.value
     );
     const IMG_URL = ref("https://image.tmdb.org/t/p/w500");
+    const social_icons=ref([
+      
+    ])
+
 
     onMounted(() => {
       {

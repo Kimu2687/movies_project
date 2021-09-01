@@ -121,7 +121,8 @@
               <br /><i class="fa fa-calendar"></i>&nbsp;{{ movie.release_date }}
             </small>
             <small class="small" style="color: #abb2b9">
-              <br /><i class="fa fa-calendar"></i>&nbsp;{{ movie.genre_ids[0] }}
+              <br />	
+<i class="fa fa-heart"></i>&nbsp;{{ movie.popularity}}
             </small>
 
             <table>
@@ -132,7 +133,7 @@
                     class="btn more_details btn-sm my-2 my-sm-0 button_bg small"
                     type="submit"
                   >
-                    More details&nbsp;<i class="fa fa-angle-double-right"></i>
+                    More details &nbsp;<i class="fa fa-angle-double-right"></i>
                   </router-link>
                 </td>
               </tr>
@@ -182,8 +183,7 @@ export default {
     const action_movies = ref([]);
     const API_KEY = ref("api_key=7e0768276e28e7e3f4136f2e524c7c7c");
     const BASE_URL = ref("https://api.themoviedb.org/3");
-    const API_URL =
-      BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
+    const API_URL =BASE_URL + "/discover/movie?sort_by=popularity.desc&" + API_KEY;
     const POPULR_MOVIES = ref([]);
     const IMG_URL = ref("https://image.tmdb.org/t/p/w500");
     const SPINNER = ref(false);
